@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greytoblack" translatesAutoresizingMaskIntoConstraints="NO" id="e8P-2y-UOi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BurrLoadingScreen" translatesAutoresizingMaskIntoConstraints="NO" id="rYj-4H-clz">
+                                <rect key="frame" x="67.5" y="213.5" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="XTS-8t-7Fo"/>
+                                    <constraint firstAttribute="height" constant="240" id="k1f-Ca-bgD"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rYj-4H-clz" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="K7Q-kx-ftg"/>
+                            <constraint firstItem="e8P-2y-UOi" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="NQ9-cr-Q1b"/>
+                            <constraint firstItem="e8P-2y-UOi" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="QxN-od-97M"/>
+                            <constraint firstAttribute="bottom" secondItem="e8P-2y-UOi" secondAttribute="bottom" id="bW4-Qt-r0y"/>
+                            <constraint firstAttribute="trailing" secondItem="e8P-2y-UOi" secondAttribute="trailing" id="bhP-kS-ebl"/>
+                            <constraint firstItem="rYj-4H-clz" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="rpp-Tj-cqP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BurrLoadingScreen" width="512" height="512"/>
+        <image name="greytoblack" width="1920" height="1080"/>
+    </resources>
+</document>
